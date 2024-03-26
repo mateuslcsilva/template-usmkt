@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '#28C0BB',
+                        light: 'F3F6F6',
+                        darkgray: '#595A5E'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        #hero {
+            background-color: transparent;
+            background-image: radial-gradient(at center center, #FFFFFF 0%, #A3E1E085 85%);
+        }
+
+        #hero-background {
+            background-image: url(assets/background-hero.png);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.1;
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body class="">
+    <header class="bg-light h-[140px] w-full flex justify-center items-center">
+        <div class="flex items-center justify-between w-full max-w-[1140px] h-full">
+            <div>
+                <img class="scale-[0.8]" src="assets/logo.png" alt="">
+            </div>
+            <div class="flex items-center gap-8">
+                <a class="text-primary tracking-tighter" href="#">Início</a>
+                <a class="text-primary tracking-tighter" href="#">Sobre mim</a>
+                <a class="text-primary tracking-tighter" href="#">Tratamentos</a>
+                <a class="font-semibold text-sm bg-primary py-3 px-4 rounded-lg text-white tracking-tighter ml-2"
+                    href="#">Contato</a>
+            </div>
+        </div>
+    </header>
+    <div id="hero" class="h-[1060px] w-full flex justify-center items-center relative">
+        <div class="h-[730px] w-[1140px] flex justify-between items-start relative z-50">
+            <div id="texto-hero" class="w-1/2 flex flex-col gap-6 pt-28">
+                <span class="text-sm text-primary font-bold">Bem-vindo!</span>
+                <h1 class="text-7xl font-bold text-darkgray leading-[5rem]">Dra. Ana Claudia Fuso</h1>
+                <p class="text-darkgray leading-8 text-lg">Sou dentista há mais de 30 anos, especialista em ortodontia, ortopedia funcional dos maxilares, odontologia do sono, laserterapia e harmonização facial.</p>
+                <p class="text-darkgray leading-8 text-lg">Ajudo mães e suas famílias a cuidarem da saúde oral, enxergando o todo de cada paciente.</p>
+                <p class="text-darkgray leading-8 text-lg">Dra. Ana Claudia Fuso | CRO-PR 8824</p>
+                <div class="flex gap-6 justify-start mt-4">
+                    <button class="px-5 py-3 text-sm rounded-lg font-semibold bg-primary text-white shadow-lg">Agendar</button>
+                    <button class="px-5 py-3 text-sm rounded-lg font-semibold text-primary border border-primary">Ler mais</button>
+                </div>
+            </div>
+            <div id="imagem-hero" class="h-full w-1/2 px-20">
+                <img class="w-full h-full rounded-xl" src="assets/image-hero.png" alt="imagem-hero" title="imagem-hero" loading="lazy" decoding="async">
+            </div>
+        </div>
+        <div id="hero-background"></div>
+        <div>
+</body>
+
+</html>
