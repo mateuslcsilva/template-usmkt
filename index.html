@@ -18,6 +18,7 @@
                         clifford: '#da373d',
                         primary: '#28C0BB',
                         light: 'F3F6F6',
+                        lightgray: '#f2f2f2ab',
                         darkgray: '#595A5E'
                     }
                 }
@@ -49,6 +50,35 @@
             width: 100%;
             height: 100%;
         }
+
+        #section1 {
+            background-color: transparent;
+        }
+
+        #section1-background {
+            background-image: url(assets/gradient-bg.svg);
+            background-position: center left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 1;
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #divider{
+            position: absolute;
+            bottom: 0;
+            background-color: #28C0BB;
+            margin: 0 auto;
+            height: 2px;
+            width: 10%;
+            border-radius: 7px;
+            transform: translateY(50%);
+        }
     </style>
 </head>
 
@@ -72,20 +102,83 @@
             <div id="texto-hero" class="w-1/2 flex flex-col gap-6 pt-28">
                 <span class="text-sm text-primary font-bold">Bem-vindo!</span>
                 <h1 class="text-7xl font-bold text-darkgray leading-[5rem]">Dra. Ana Claudia Fuso</h1>
-                <p class="text-darkgray leading-8 text-lg">Sou dentista há mais de 30 anos, especialista em ortodontia, ortopedia funcional dos maxilares, odontologia do sono, laserterapia e harmonização facial.</p>
-                <p class="text-darkgray leading-8 text-lg">Ajudo mães e suas famílias a cuidarem da saúde oral, enxergando o todo de cada paciente.</p>
+                <p class="text-darkgray leading-8 text-lg">Sou dentista há mais de 30 anos, especialista em ortodontia,
+                    ortopedia funcional dos maxilares, odontologia do sono, laserterapia e harmonização facial.</p>
+                <p class="text-darkgray leading-8 text-lg">Ajudo mães e suas famílias a cuidarem da saúde oral,
+                    enxergando o todo de cada paciente.</p>
                 <p class="text-darkgray leading-8 text-lg">Dra. Ana Claudia Fuso | CRO-PR 8824</p>
                 <div class="flex gap-6 justify-start mt-4">
-                    <button class="px-5 py-3 text-sm rounded-lg font-semibold bg-primary text-white shadow-lg">Agendar</button>
-                    <button class="px-5 py-3 text-sm rounded-lg font-semibold text-primary border border-primary">Ler mais</button>
+                    <button
+                        class="px-5 py-3 text-sm rounded-lg font-semibold bg-primary text-white shadow-lg">Agendar</button>
+                    <button class="px-5 py-3 text-sm rounded-lg font-semibold text-primary border border-primary">Ler
+                        mais</button>
                 </div>
             </div>
             <div id="imagem-hero" class="h-full w-1/2 px-20">
-                <img class="w-full h-full rounded-xl" src="assets/image-hero.png" alt="imagem-hero" title="imagem-hero" loading="lazy" decoding="async">
+                <img class="w-full h-full rounded-xl" src="assets/image-hero.png" alt="imagem-hero" title="imagem-hero"
+                    loading="lazy" decoding="async">
             </div>
         </div>
         <div id="hero-background"></div>
-        <div>
+    </div>
+    <section id="section1" class="h-[1000px] w-full flex justify-center py-24 px-10 relative">
+        <div class="h-[730px] w-[1140px] flex justify-between items-start relative z-50 gap-12 px-2">
+            <div id="texto-section1" class="w-1/2 flex flex-col">
+                <h1 class="text-5xl font-bold text-darkgray leading-[3rem] mb-8">Bruxismo</h1>
+                <p class="text-darkgray leading-8 text-[13pt]">O bruxismo pode ser definido como uma atividade
+                    parafuncional que inclui o apertamento ou ranger dos dentes, podendo acometer pessoas de todas as
+                    idades.</p>
+                <p class="text-darkgray leading-8 text-[13pt]">Esta atividade é realizada pelos músculos da mastigação e
+                    pode trazer diversas consequências para o paciente sem o devido tratamento, como:</p>
+                <ul class="list-disc px-12">
+                    <li class="font-bold text-md leading-8 text-darkgray">lesões orofaciais</li>
+                    <li class="font-bold text-md leading-8 text-darkgray">desgastes dentários ou fraturas, problemas
+                        ósseos, gengivas e articulações (disfunção de ATM)</li>
+                    <li class="font-bold text-md leading-8 text-darkgray">lesão periodontal</li>
+                    <li class="font-bold text-md leading-8 text-darkgray">distúrbios da articulação temporomandibular
+                        (DTM)</li>
+                    <li class="font-bold text-md leading-8 text-darkgray">dor muscular</li>
+                </ul>
+                <p class="text-darkgray leading-8 text-[13pt]">O quadro clínico pode incorrer em alterações na
+                    musculatura mastigatória, fadiga, mialgia, miosite, assimetria na atividade muscular e
+                    comprometimento das funções.</p>
+                <p class="text-darkgray leading-8 text-[13pt]">Apesar de não ter cura, é possível controlar o problema
+                    através de algum dos tratamentos indicados por um especialista.</p>
+                <p class="text-darkgray leading-8 text-[13pt]">Aqui na clínica eu realizo o tratamento para bruxismo em
+                    adultos e crianças, agende uma avaliação para saber se é o seu caso.</p>
+                <!-- <div class="flex gap-6 justify-start mt-4">
+                    <button
+                        class="px-5 py-3 text-sm rounded-lg font-semibold bg-primary text-white shadow-lg">Agendar</button>
+                    <button class="px-5 py-3 text-sm rounded-lg font-semibold text-primary border border-primary">Ler
+                        mais</button>
+                </div> -->
+            </div>
+            <div id="imagem-section1" class="w-1/2 flex flex-col justify-center items-center gap-16 pt-16">
+                <img class="w-full h-full rounded-xl" src="assets/imagem-section1.png" alt="imagem-section1"
+                    title="imagem-section1" loading="lazy" decoding="async">
+                <button
+                    class="px-5 py-3 text-sm rounded-lg font-semibold bg-primary text-white shadow-lg">Agendar</button>
+            </div>
+        </div>
+        <div id="section1-background"></div>
+        <div id="divider"></div>
+    </section>
+    <section id="section2" class="h-[900px] w-full flex justify-center pt-24 pb-12 px-10 relative bg-lightgray">
+        <div class="h-[730px] w-[1140px] flex flex-row-reverse justify-between items-start relative z-50 gap-4 px-2">
+            <div id="texto-section2" class="w-1/2 flex flex-col py-16 pl-16">
+                <h1 class="text-5xl font-bold text-darkgray leading-[3rem] mb-8">Ortodontia</h1>
+                <h4 class="text-xl font-bold text-darkgray mb-2">O que é Ortodontia? Como funciona o tratamento?</h4>
+                <p class="text-darkgray leading-8 text-[13pt] mb-8">Ortodontia é uma especialidade odontológica que realiza o tratamento de correção dos dentes e dos ossos maxilares posicionados de formas inadequadas.</p>
+                <h4 class="text-xl font-bold text-darkgray mb-2">Tratamento Invisalign (alinhadores invisíveis) para adultos e crianças.</h4>
+                <p class="text-darkgray leading-8 text-[13pt] mb-8">Esta opção moderna e discreta proporciona resultados excepcionais tanto para pacientes adultos quanto para crianças, garantindo um sorriso saudável e bonito.:</p>
+                <button class="px-5 py-3 text-sm rounded-lg font-semibold bg-primary text-white shadow-lg mx-auto">Agendar</button>
+            </div>
+            <div id="imagem-section2" class="w-1/2 flex flex-col justify-center items-center gap-16 pt-16">
+                <img class="w-full h-full rounded-xl" src="assets/imagem-section2.png" alt="imagem-section2"
+                    title="imagem-section2" loading="lazy" decoding="async">
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
