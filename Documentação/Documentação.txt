@@ -1,0 +1,7 @@
+a fazer
+- copiar o footer do sdi
+- adicionar uma terceira seção de destaque
+- alterar espaçamento da tela de hero e tamanho do header em telas menores
+- diminuir espaçamento entre as seções em telas menores
+- responsividade do carrossel para celulares
+- toda a responsividade para celulares
