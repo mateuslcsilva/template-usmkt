@@ -404,9 +404,9 @@
 
     const equipeFadingIn = () => {
         const scrollToChange = {
-            section1: screen.width > 1400 ? 500 : 550,
-            section2: screen.width > 1400 ? 1440 : 1540,
-            section3: screen.width > 1400 ? 2110 : 2110
+            section1: screen.width > 1400 ? 450 : 450,
+            section2: screen.width > 1400 ? 1340 : 1340,
+            section3: screen.width > 1400 ? 2110 : 2050
         }
 
         window.scrollY > scrollToChange['section1'] && document.querySelector('#section1').classList.add('fadingIn');
